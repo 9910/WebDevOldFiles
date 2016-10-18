@@ -1,0 +1,67 @@
+<html>
+ 
+<head>
+    <link type="text/css" rel="stylesheet" href="style2.css">
+    <link type="text/css" rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+</head>
+ 
+<body>
+    <div id="container">
+ 
+        <div class="header">
+     
+        </div>
+           
+		<div id="nav">
+       
+        </div>          
+       
+		<div class="sidebar">
+		<ul id = "verticalMenu">
+			<li><a href = "">Rome</a>
+				<ul>
+					<li><a href = "">Early</a></li>
+					<li><a href = "">Middle</a></li>
+					<li><a href = "">Late</a></li>
+				</ul>
+			</li>
+			<li>-</li>
+			<li><a href = "">Egypte</a>
+				<ul>
+					<li><a href = "">Early</a></li>
+					<li><a href = "">Middle</a></li>
+					<li><a href = "">Late</a></li>
+				</ul>
+			</li>
+			<li>-</li>
+			<li><a href = "">Persia</a>
+				<ul>
+					<li><a href = "">Early</a></li>
+					<li><a href = "">Middle</a></li>
+					<li><a href = "">Late</a></li>
+				</ul>
+			</li>
+		</ul>
+		</div>
+ 
+		<div class="main">
+ 
+		</div>
+       
+ 
+    </div>
+ 
+    <script src="jquery-3.0.0.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#verticalMenu").menu({icons: {submenu: "ui-icon-circle-triangle-e"}});
+             
+        });
+ 
+     </script>
+     
+</body>
+</html>

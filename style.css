@@ -1,0 +1,51 @@
+body{
+	margin: 0px;
+}
+
+.first{
+	margin: 0px;
+	min-height: 100px;
+	height: 100px;
+	background-color: gray;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.main{
+	margin: 0px;
+	min-height: 100px;
+	height: 200px;
+	background-color: gray;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.second ul{
+	margin: 0px;
+	min-height: 100px;
+	height: 200;
+	background-color: gray;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.second ul li{
+	float: left;
+	width: 150px;
+	height: 100px;
+	text-align: center;
+}
+
+.second ul li a{
+	text-decoration: none;
+}
+
+.second ul li li{
+	display: none;
+	color: blue;
+	background-color: white;
+}
+
+.second ul li li:hover{
+	background-color: black;
+}

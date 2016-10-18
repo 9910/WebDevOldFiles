@@ -1,0 +1,88 @@
+<html>
+ 
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+	<link type="text/css" rel="stylesheet" href="jquery-ui/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+	<link type="text/css" rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+</head>
+ 
+<body>
+ 
+        <div id="left">              
+            <div id="panels">
+				<h2>Section on Ancient Rome</h2>
+ 
+				<div>
+				The Ancient Romans conquered a huge amount of territory during ancient times.
+				One of the most famous Romans was Julius Caesar.
+				</div>
+       
+				<h2>Section on Ancient Greece</h2>
+ 
+				<div>
+				<b>The Ancient Greeks</b> fought several wars against Persia.
+				One of the most famous Greeks was Pericles.
+				</div>
+ 
+				<h2>Section on Ancient Egypt</h2>
+ 
+				<div>
+				The Ancient Egyptians build large structures such as the pyramids.
+				One of the most famous Egyptians was Cleopatra.  
+				</div>
+			</div>      
+			Pick a travel date: <input type="text" id="pickdate">
+        </div>
+		
+	<div id = "center">
+	<ul>
+		<li>Bobcats</li>
+		<li>Wildcats</li>
+		<li>Sharks</li>
+	</ul>
+	</div>
+       
+        <div id="center">              
+            <p>This area will contain the center content area.</p>
+			<img src="cat.jpg" title="Cat">
+        </div>
+ 
+        <div id="right">               
+            <p>This area will contain the right content area.
+            </p>         
+        </div>
+ 
+        <div id="test">
+			<button> Hit button to change something </button>
+			<button id="testB"> Slide section down </button>
+        </div>
+ 
+ <script src="jquery-3.0.0.js"></script>
+ <script src="jquery-ui/jquery-ui.js"></script>
+ <script>
+          $(document).ready(function() {
+				$("button").click(function() {
+					//$("#left").css({"color" : "red" , "border" : "solid 2px yellow"});
+					//$("p:last").addClass("para");
+					//$("img").attr("src", "Lion.jpg");
+					//$("li").each(function() {
+						//$(this).html("<li>Tigers</li>");
+					//});
+					$("#right").slideUp();
+				});
+				//$("img").mouseover(function() {
+					//$("p").text("Hail me dog");
+				//});
+				$("#testB").click(function() {
+					$("#right").slideDown();
+				});
+				$("#pickdate").datepicker({changeMonth: 3, changeYear: true, showOtherMonths: true});
+				$("img").tooltip({track: true});
+				$("#panels").accordion({collapsible: true}, {icons: {
+										header: "ui-icon-plus",
+										activeHeader: "ui-icon-minus"}});
+            }); 
+ </script>
+</body>
+</html>
